@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potter's Global Prayer Ministry | Mondays & Fridays Global Altar</title>
+  <meta name="description" content="Potter's Global Prayer Ministry (PGPM) - An international intercessory altar gathered every Monday and Friday. Shaped by fire, molded in prayer. Jeremiah 18:1-6." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Potter's Global Prayer Ministry | Shaped by Fire. Molded in Prayer." />
+  <meta property="og:description" content="Join thousands worldwide on Mondays and Fridays for early morning breakthrough and Friday prophetic night vigils." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              raw: '#c86446',
+              warm: '#df7a5c',
+              soft: '#f4a261',
+              dark: '#1c1414'
+            },
+            sacred: {
+              gold: '#d4af37',
+              ochre: '#e5c07b',
+              glow: 'rgba(212, 175, 55, 0.25)'
+            },
+            sand: {
+              cream: '#faf7f2',
+              muted: '#a19d94'
+            },
+            obsidian: {
+              base: '#08080a',
+              surface: '#0f0f13',
+              card: '#15141b'
+            }
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            display: ['Syne', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['Space Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="bg-[#08080a] text-[#faf7f2] selection:bg-amber-500/30 selection:text-amber-200">
+
+  <!-- SVG Filmic Noise Filter Overlay -->
+  <svg class="film-grain" xmlns="http://www.w3.org/2000/svg">
+    <filter id="noiseFilter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#noiseFilter)" />
+  </svg>
+
+  <!-- Interactive Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-[2.5px] bg-gradient-to-r from-clay-warm via-sacred-gold to-amber-300 z-50 w-0 transition-all duration-75"></div>
+
+  <!-- Top Marquee Ticker -->
+  <div class="border-b border-white/5 bg-[#0b0b0e] py-2 overflow-hidden select-none">
+    <div class="marquee-track flex items-center gap-8 text-[11px] font-mono tracking-widest uppercase text-amber-200/70">
+      <span>• JEREMIAH 18:2 — ARISE AND GO DOWN TO THE POTTER'S HOUSE</span>
+      <span class="text-white/30">✦</span>
+      <span class="text-amber-400 font-semibold">• MONDAY ALTAR: 06:00 & 19:00 UTC (BREAKTHROUGH & MERCY)</span>
+      <span class="text-white/30">✦</span>
+      <span class="text-clay-warm font-semibold">• FRIDAY VIGIL: 21:00 UTC (UPPER ROOM PROPHETIC FIRE)</span>
+      <span class="text-white/30">✦</span>
+      <span>• WORLDWIDE INTERCESSORY WATCH • 48+ NATIONS UNITED IN PRAYER</span>
+      <span class="text-white/30">✦</span>
+      <span>• THE MARRED CLAY SHALL BE MADE WHOLE AGAIN</span>
+      <span class="text-white/30">✦</span>
+      <span>• JEREMIAH 18:2 — ARISE AND GO DOWN TO THE POTTER'S HOUSE</span>
+      <span class="text-white/30">✦</span>
+      <span class="text-amber-400 font-semibold">• MONDAY ALTAR: 06:00 & 19:00 UTC (BREAKTHROUGH & MERCY)</span>
+      <span class="text-white/30">✦</span>
+      <span class="text-clay-warm font-semibold">• FRIDAY VIGIL: 21:00 UTC (UPPER ROOM PROPHETIC FIRE)</span>
+      <span class="text-white/30">✦</span>
+    </div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-40 glass-panel border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo / Emblem -->
+      <a href="#" class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-full border border-sacred-gold/40 flex items-center justify-center bg-clay-raw/10 group-hover:border-sacred-gold transition-colors duration-300">
+          <svg class="w-5 h-5 text-sacred-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z" />
+            <path d="M12 9v4" />
+            <path d="M10 11h4" />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-sm tracking-wider uppercase text-sand-cream group-hover:text-amber-300 transition-colors">
+            Potter's Global
+          </span>
+          <span class="font-serif italic text-xs text-amber-200/60 -mt-1 tracking-wider">
+            Prayer Ministry
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 font-sans text-xs tracking-wider uppercase font-medium text-neutral-300">
+        <a href="#schedule" class="hover:text-sacred-gold transition-colors">Service Days</a>
+        <a href="#wheel" class="hover:text-sacred-gold transition-colors">The Potter's Wheel</a>
+        <a href="#prayers" class="hover:text-sacred-gold transition-colors">Prayer Wall</a>
+        <a href="#doctrine" class="hover:text-sacred-gold transition-colors">The Mantle</a>
+        <a href="#nations" class="hover:text-sacred-gold transition-colors">Global Altar</a>
+      </nav>
+
+      <!-- Right Header Actions (Audio Atmosphere + Live CTA) -->
+      <div class="flex items-center gap-4">
+        
+        <!-- Sanctuary Audio Toggle -->
+        <button id="btn-audio-toggle" class="btn-magnetic hidden sm:flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-white/10 hover:border-sacred-gold/50 bg-white/5 transition-all duration-300 text-xs font-mono" title="Toggle Sanctuary Meditative Atmosphere">
+          <div id="sound-visualizer" class="sound-paused flex items-center gap-1 h-3.5">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span id="audio-status-label" class="text-neutral-300 text-[11px]">Atmosphere</span>
+        </button>
+
+        <!-- Live Gathering Button -->
+        <a href="#countdown-section" class="btn-magnetic px-5 py-2 rounded-full text-xs font-mono font-medium tracking-wider uppercase bg-gradient-to-r from-clay-raw to-clay-warm text-white shadow-lg shadow-clay-raw/20 hover:shadow-clay-warm/30 transition-all border border-clay-soft/40">
+          Enter Altar
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-[92vh] flex items-center justify-center px-6 pt-12 pb-20 overflow-hidden">
+    
+    <!-- Background Atmospheric Radial Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[550px] bg-clay-raw/15 rounded-full blur-[140px] pointer-events-none animate-glow"></div>
+    <div class="absolute bottom-10 right-1/4 w-[450px] h-[450px] bg-sacred-gold/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto text-center relative z-10">
+      
+      <!-- Live Status Pill -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-panel-gold mb-8 text-xs font-mono tracking-widest text-amber-200">
+        <span class="live-badge-dot"></span>
+        <span class="uppercase tracking-wider">Mondays & Fridays Consecrated Watch</span>
+        <span class="text-white/30">|</span>
+        <span class="text-neutral-400">Jeremiah 18:1-6</span>
+      </div>
+
+      <!-- Main Editorial Kinetic Typography -->
+      <h1 class="font-display text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.04] mb-8 uppercase">
+        Shaped by Fire. <br />
+        <span class="font-serif italic font-normal text-gold-gradient normal-case">
+          Molded in Prayer.
+        </span>
+      </h1>
+
+      <!-- Subtitle Description -->
+      <p class="font-sans text-base sm:text-xl text-neutral-300 font-light max-w-2xl mx-auto leading-relaxed mb-12">
+        An international spiritual sanctuary dedicated to fervent intercession, breaking ancestral yokes, and divine remolding every <strong class="text-amber-300 font-semibold">Monday</strong> and <strong class="text-clay-soft font-semibold">Friday</strong>.
+      </p>
+
+      <!-- Primary Action CTAs -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a href="#countdown-section" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-sacred-gold via-amber-400 to-clay-warm text-black font-semibold text-sm tracking-wide uppercase hover:scale-[1.02] transition-transform duration-300 shadow-xl shadow-amber-500/20">
+          Join Next Gathering
+        </a>
+        <button id="btn-open-prayer-modal" class="w-full sm:w-auto px-8 py-4 rounded-full glass-panel text-white font-medium text-sm tracking-wide uppercase border border-white/15 hover:border-amber-400/50 hover:bg-white/5 transition-all duration-300">
+          Submit Prayer Request
+        </button>
+      </div>
+
+      <!-- Key Service Cadence Strip -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto text-left">
+        
+        <!-- Monday Card Highlight -->
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 hover:border-sacred-gold/40 transition-all group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono tracking-widest text-amber-300 uppercase px-2.5 py-1 rounded bg-amber-400/10 border border-amber-400/20">
+              Every Monday
+            </span>
+            <span class="text-xs text-neutral-400 font-mono">06:00 & 19:00 UTC</span>
+          </div>
+          <h3 class="text-lg font-display font-bold text-white mb-1 group-hover:text-amber-200 transition-colors">
+            Covenant Breakthrough & Mercy Altar
+          </h3>
+          <p class="text-xs text-neutral-400 font-sans leading-relaxed">
+            Early dew consecration of the week and evening warfare dismantling stagnation and financial hindrances.
+          </p>
+        </div>
+
+        <!-- Friday Card Highlight -->
+        <div class="glass-panel-clay p-6 rounded-2xl border border-clay-raw/30 hover:border-clay-warm/60 transition-all group">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-mono tracking-widest text-clay-soft uppercase px-2.5 py-1 rounded bg-clay-raw/20 border border-clay-raw/40">
+              Every Friday
+            </span>
+            <span class="text-xs text-neutral-400 font-mono">21:00 UTC</span>
+          </div>
+          <h3 class="text-lg font-display font-bold text-white mb-1 group-hover:text-clay-soft transition-colors">
+            Upper Room Prophetic Fire Vigil
+          </h3>
+          <p class="text-xs text-neutral-300 font-sans leading-relaxed">
+            Deep midnight intercession, deliverance from foundational bondages, healing decrees, and spiritual renewal.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DYNAMIC LIVE COUNTDOWN ENGINE -->
+  <section id="countdown-section" class="py-24 px-6 border-y border-white/10 bg-obsidian-surface/60 relative">
+    <div class="max-w-6xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-14">
+        <span class="text-xs font-mono uppercase tracking-[0.25em] text-amber-400 mb-2 block">
+          Synchronized Global Altar
+        </span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold tracking-tight text-white mb-4">
+          Next Gathering Countdown
+        </h2>
+        <p class="font-serif italic text-lg sm:text-xl text-neutral-400 max-w-xl mx-auto">
+          "For where two or three are gathered in my name, there am I with them."
+        </p>
+      </div>
+
+      <!-- Live Broadcast Alert (Shown when service is actively running) -->
+      <div id="hero-live-alert" class="hidden max-w-2xl mx-auto mb-10 p-5 rounded-2xl bg-red-950/40 border border-red-500/50 text-center animate-pulse">
+        <div class="flex items-center justify-center gap-2 text-red-400 font-mono font-bold text-sm tracking-wider uppercase mb-1">
+          <span class="w-3 h-3 rounded-full bg-red-500 inline-block animate-ping"></span>
+          Gathering Active Right Now
+        </div>
+        <p class="text-xs text-neutral-300 mb-4">
+          The sanctuary doors are currently open. Enter the global live stream or dial in to participate.
+        </p>
+        <a href="https://zoom.us" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 text-white font-mono text-xs uppercase tracking-wider font-semibold transition-all">
+          <span>Enter Live Room</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Countdown Display Digits -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto mb-12">
+        
+        <!-- Days -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl text-center border border-white/10 relative overflow-hidden">
+          <span class="text-4xl sm:text-6xl lg:text-7xl font-mono font-bold text-amber-300 block" id="count-days">00</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400 mt-2 block">Days</span>
+        </div>
+
+        <!-- Hours -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl text-center border border-white/10 relative overflow-hidden">
+          <span class="text-4xl sm:text-6xl lg:text-7xl font-mono font-bold text-white block" id="count-hours">00</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400 mt-2 block">Hours</span>
+        </div>
+
+        <!-- Minutes -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl text-center border border-white/10 relative overflow-hidden">
+          <span class="text-4xl sm:text-6xl lg:text-7xl font-mono font-bold text-white block" id="count-mins">00</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400 mt-2 block">Minutes</span>
+        </div>
+
+        <!-- Seconds -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl text-center border border-white/10 relative overflow-hidden">
+          <span class="text-4xl sm:text-6xl lg:text-7xl font-mono font-bold text-clay-warm block" id="count-secs">00</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400 mt-2 block">Seconds</span>
+        </div>
+
+      </div>
+
+      <!-- Target Service Details Banner -->
+      <div class="glass-panel-gold max-w-3xl mx-auto p-6 rounded-2xl border border-sacred-gold/30 flex flex-col sm:flex-row items-center justify-between gap-6 mb-10 text-center sm:text-left">
+        <div>
+          <span class="text-xs font-mono text-amber-400 uppercase tracking-widest block mb-1">
+            Target Assembly
+          </span>
+          <h3 id="next-service-name" class="text-xl font-display font-bold text-white">
+            Calculating upcoming service...
+          </h3>
+          <p id="next-service-time" class="text-xs text-neutral-400 font-mono mt-1">
+            Synchronizing with UTC & local timezone...
+          </p>
+        </div>
+
+        <!-- Calendar Export Links -->
+        <div class="flex items-center gap-3">
+          <button id="btn-google-cal" class="px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 text-xs font-mono text-sand-cream transition-all flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+            <span>Google Cal</span>
+          </button>
+          <button id="btn-download-ics" class="px-4 py-2 rounded-xl bg-sacred-gold/15 hover:bg-sacred-gold/25 border border-sacred-gold/40 text-xs font-mono text-amber-200 transition-all flex items-center gap-2">
+            <svg class="w-4 h-4 text-amber-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Download .ICS</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICE SCHEDULE BREAKDOWN (MONDAYS & FRIDAYS) -->
+  <section id="schedule" class="py-28 px-6 relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="max-w-2xl mb-16">
+        <span class="text-xs font-mono uppercase tracking-[0.25em] text-clay-warm mb-3 block">
+          Divine Order of Gatherings
+        </span>
+        <h2 class="font-display text-4xl sm:text-6xl font-bold tracking-tight text-white mb-6">
+          The Two Pillars: <br/>
+          <span class="font-serif italic font-normal text-gold-gradient">Mondays & Fridays.</span>
+        </h2>
+        <p class="font-sans text-neutral-300 text-base leading-relaxed">
+          At Potter's Global Prayer Ministry, we do not scatter our energy across trivial engagements. We consecrate two specific portals of time each week to anchor our destinies in the fiery hands of the Potter.
+        </p>
+      </div>
+
+      <!-- Two Pillars Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        
+        <!-- COLUMN 1: MONDAY (THE COVENANT ALTAR) -->
+        <div class="service-card glass-panel rounded-3xl p-8 sm:p-10 border border-white/10 relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-16 -top-16 w-56 h-56 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-8">
+              <div>
+                <span class="text-xs font-mono tracking-widest uppercase text-amber-400">Day 1 of Consecration</span>
+                <h3 class="text-3xl font-display font-bold text-white mt-1">Every Monday</h3>
+              </div>
+              <span class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-mono text-sm font-bold">
+                MON
+              </span>
+            </div>
+
+            <!-- Session A -->
+            <div class="mb-8">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span class="font-mono text-xs uppercase tracking-wider text-amber-200">Session I • 06:00 UTC (Early Dew)</span>
+              </div>
+              <h4 class="text-xl font-serif italic text-white mb-2">The Morning Glory & Gateway of the Week</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed font-sans">
+                Taking dominion over the days ahead, commanding the morning according to Job 38:12, and sanctifying all corporate, ministerial, and household endeavors before worldly noise commences.
+              </p>
+            </div>
+
+            <!-- Session B -->
+            <div class="mb-8">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+                <span class="font-mono text-xs uppercase tracking-wider text-amber-200">Session II • 19:00 UTC (Breakthrough Altar)</span>
+              </div>
+              <h4 class="text-xl font-serif italic text-white mb-2">The Altar of Breakthrough & Mercy</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed font-sans">
+                Intensive targeted intercession addressing stagnation, delayed appointments, career stagnation, and supernatural financial expansion. Laying our petition jars upon the altar.
+              </p>
+            </div>
+
+            <!-- Scripture Anchor -->
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5 text-xs font-mono text-neutral-300 mb-6">
+              <span class="text-amber-400 font-bold block mb-1">FOUNDATION SCRIPTURE:</span>
+              "O LORD, in the morning You hear my voice; in the morning I prepare a sacrifice for You and watch." — Psalm 5:3
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400">
+            <span>Duration: 75–90 min</span>
+            <span class="text-amber-300">Global Zoom / YouTube / Mixlr</span>
+          </div>
+        </div>
+
+        <!-- COLUMN 2: FRIDAY (THE UPPER ROOM VIGIL) -->
+        <div class="service-card glass-panel-clay rounded-3xl p-8 sm:p-10 border border-clay-raw/30 relative overflow-hidden flex flex-col justify-between">
+          <div class="absolute -right-16 -top-16 w-56 h-56 bg-clay-raw/20 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div>
+            <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-8">
+              <div>
+                <span class="text-xs font-mono tracking-widest uppercase text-clay-warm">Day 2 of Consecration</span>
+                <h3 class="text-3xl font-display font-bold text-white mt-1">Every Friday</h3>
+              </div>
+              <span class="w-12 h-12 rounded-2xl bg-clay-raw/20 border border-clay-warm/40 flex items-center justify-center text-clay-warm font-mono text-sm font-bold">
+                FRI
+              </span>
+            </div>
+
+            <!-- Sole Session -->
+            <div class="mb-8">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="w-2 h-2 rounded-full bg-clay-warm"></span>
+                <span class="font-mono text-xs uppercase tracking-wider text-clay-warm">Midnight Watch • 21:00 UTC (Night Vigil)</span>
+              </div>
+              <h4 class="text-xl font-serif italic text-white mb-2">The Upper Room Prophetic Fire Vigil</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed font-sans mb-4">
+                The apex gathering of our global family. A high-voltage atmosphere of prophetic decrees, pulling down generational altars, total deliverance, physical healings, and baptism in the Holy Ghost.
+              </p>
+              <ul class="space-y-2 text-xs text-neutral-300 font-sans">
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-clay-warm flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Breaking stubborn ancestral covenants & witchcraft attacks</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-clay-warm flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Anointing oil consecration & communion from home altars</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-clay-warm flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                  <span>Prophetic insight, dreams interpretation & midnight intercession</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Scripture Anchor -->
+            <div class="p-4 rounded-xl bg-white/5 border border-white/5 text-xs font-mono text-neutral-300 mb-6">
+              <span class="text-clay-soft font-bold block mb-1">FOUNDATION SCRIPTURE:</span>
+              "At midnight Paul and Silas were praying and singing hymns to God, and the prisoners were listening to them." — Acts 16:25
+            </div>
+          </div>
+
+          <div class="pt-6 border-t border-white/10 flex items-center justify-between text-xs font-mono text-neutral-400">
+            <span>Duration: 180 min (Full Vigil)</span>
+            <span class="text-clay-soft">Worldwide Broadcast Live</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Global Timezone Matrix -->
+      <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h4 class="text-base font-display font-bold text-white">Global Service Time Equivalents</h4>
+            <p class="text-xs text-neutral-400 font-sans">Find your exact local time for our Monday and Friday services.</p>
+          </div>
+          <span class="text-xs font-mono px-3 py-1 rounded bg-white/5 border border-white/10 text-amber-200">
+            Standard Reference: Coordinated Universal Time (UTC)
+          </span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-center font-mono">
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <span class="text-[11px] text-neutral-400 block">London (GMT)</span>
+            <span class="text-sm font-bold text-white mt-1 block">Mon 06:00 / 19:00</span>
+            <span class="text-[11px] text-clay-warm block mt-0.5">Fri 21:00</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <span class="text-[11px] text-neutral-400 block">Lagos (WAT)</span>
+            <span class="text-sm font-bold text-white mt-1 block">Mon 07:00 / 20:00</span>
+            <span class="text-[11px] text-clay-warm block mt-0.5">Fri 22:00</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <span class="text-[11px] text-neutral-400 block">Nairobi (EAT)</span>
+            <span class="text-sm font-bold text-white mt-1 block">Mon 09:00 / 22:00</span>
+            <span class="text-[11px] text-clay-warm block mt-0.5">Sat 00:00</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <span class="text-[11px] text-neutral-400 block">New York (EDT)</span>
+            <span class="text-sm font-bold text-white mt-1 block">Mon 02:00 / 15:00</span>
+            <span class="text-[11px] text-clay-warm block mt-0.5">Fri 17:00</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <span class="text-[11px] text-neutral-400 block">Los Angeles (PDT)</span>
+            <span class="text-sm font-bold text-white mt-1 block">Mon 23:00 / 12:00</span>
+            <span class="text-[11px] text-clay-warm block mt-0.5">Fri 14:00</span>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <span class="text-[11px] text-neutral-400 block">Johannesburg (SAST)</span>
+            <span class="text-sm font-bold text-white mt-1 block">Mon 08:00 / 21:00</span>
+            <span class="text-[11px] text-clay-warm block mt-0.5">Fri 23:00</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CANVAS: THE POTTER'S WHEEL -->
+  <section id="wheel" class="py-28 px-6 bg-[#0a0a0d] border-t border-white/10 relative overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Left Narrative Column -->
+      <div class="lg:col-span-5">
+        <span class="text-xs font-mono uppercase tracking-[0.25em] text-amber-400 mb-3 block">
+          Interactive Sanctuary Experience
+        </span>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-white mb-6">
+          The Potter's Wheel.
+        </h2>
+        <p class="font-serif italic text-2xl text-amber-200/90 leading-snug mb-6">
+          "Can I not do with you, Israel, as this potter does? Like clay in the hand of the potter, so are you in my hand."
+        </p>
+        <p class="font-sans text-sm text-neutral-300 leading-relaxed mb-8">
+          The clay cannot sculpt itself. Only under the steady pressure of the Master's thumbs does raw, shapeless earth become a vessel fit for the Master's use. Hover or drag across the rotating vessel to interact with the lathe in real-time.
+        </p>
+
+        <div class="space-y-4 font-mono text-xs text-neutral-400">
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold text-[10px]">01</span>
+            <span>Move cursor up & down to alter the neck and waist curvature</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold text-[10px]">02</span>
+            <span>Observe the celestial embers of prayer rising from the wheel</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <span class="w-6 h-6 rounded-full bg-amber-500/20 text-amber-300 flex items-center justify-center font-bold text-[10px]">03</span>
+            <span>Contemplate your surrender on Mondays and Fridays</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Interactive Canvas Column -->
+      <div class="lg:col-span-7">
+        <div class="relative w-full h-[520px] rounded-3xl glass-panel-gold p-4 border border-sacred-gold/30 shadow-2xl flex items-center justify-center overflow-hidden">
+          
+          <!-- Instructions overlay badge -->
+          <div class="absolute top-6 left-6 z-10 flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[11px] font-mono text-neutral-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+            <span>Interactive • Move pointer to shape clay</span>
+          </div>
+
+          <!-- HTML5 Canvas for Potter's Wheel Simulation -->
+          <canvas id="potterWheelCanvas" class="w-full h-full cursor-grab active:cursor-grabbing"></canvas>
+
+          <!-- Bottom Quote Caption -->
+          <div class="absolute bottom-6 right-6 z-10 text-right">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-amber-400 block">JEREMIAH 18:4</span>
+            <span class="text-xs font-serif italic text-neutral-300">"He remade it into another vessel, as seemed good to him."</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PRAYER WALL & INTERCESSION ENGINE -->
+  <section id="prayers" class="py-28 px-6 relative border-t border-white/10">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-[0.25em] text-clay-warm mb-3 block">
+            Community Altar of Agreement
+          </span>
+          <h2 class="font-display text-4xl sm:text-6xl font-bold tracking-tight text-white">
+            The Global Prayer Wall.
+          </h2>
+          <p class="font-serif italic text-lg text-neutral-400 mt-2">
+            "Again I say unto you, That if two of you shall agree on earth as touching any thing..."
+          </p>
+        </div>
+
+        <button id="btn-open-prayer-modal-2" onclick="document.getElementById('prayer-modal').classList.add('active')" class="btn-magnetic px-8 py-3.5 rounded-full bg-gradient-to-r from-sacred-gold to-amber-500 text-black font-semibold text-xs tracking-wider uppercase shadow-lg shadow-amber-500/20 hover:scale-105 transition-all">
+          Lay Burden Upon Altar
+        </button>
+      </div>
+
+      <!-- Filter Category Buttons -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 text-xs font-mono">
+        <button class="filter-tag-btn active px-4 py-2 rounded-full bg-amber-500 text-black font-semibold transition-all" data-filter="ALL">
+          All Burdens
+        </button>
+        <button class="filter-tag-btn px-4 py-2 rounded-full glass-panel text-neutral-300 hover:text-white border border-white/10 transition-all" data-filter="BREAKTHROUGH">
+          Breakthrough
+        </button>
+        <button class="filter-tag-btn px-4 py-2 rounded-full glass-panel text-neutral-300 hover:text-white border border-white/10 transition-all" data-filter="HEALING">
+          Healing & Restoration
+        </button>
+        <button class="filter-tag-btn px-4 py-2 rounded-full glass-panel text-neutral-300 hover:text-white border border-white/10 transition-all" data-filter="DELIVERANCE">
+          Deliverance & Warfare
+        </button>
+        <button class="filter-tag-btn px-4 py-2 rounded-full glass-panel text-neutral-300 hover:text-white border border-white/10 transition-all" data-filter="FAMILY">
+          Family & Marriage
+        </button>
+      </div>
+
+      <!-- Dynamic Prayer Cards Grid -->
+      <div id="prayer-cards-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered by js/app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THE SPIRITUAL MANTLE & APOSTOLIC VISION -->
+  <section id="doctrine" class="py-28 px-6 bg-obsidian-surface border-t border-white/10 relative">
+    <div class="max-w-6xl mx-auto">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono uppercase tracking-[0.25em] text-sacred-gold mb-3 block">
+          Apostolic Doctrine & Calling
+        </span>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-white mb-6">
+          Vessels of Honor in a Shaken World.
+        </h2>
+        <p class="font-sans text-neutral-300 text-sm leading-relaxed">
+          The Potter's Global Prayer Ministry is not an ordinary congregation. It is an end-time hospital of prayer, a spiritual workshop where broken, fragmented, and shattered human lives are restored upon the rotating wheel of divine grace.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 hover:border-amber-400/40 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold text-white mb-3">Fire of Consecration</h3>
+          <p class="text-xs text-neutral-400 font-sans leading-relaxed">
+            Every vessel must pass through the kiln. The heat does not destroy the clay; it solidifies the structure so it can hold the pure water of the Spirit without leakage.
+          </p>
+        </div>
+
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 hover:border-clay-warm/40 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-clay-raw/10 border border-clay-raw/30 flex items-center justify-center text-clay-warm mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold text-white mb-3">Global Intercession</h3>
+          <p class="text-xs text-neutral-400 font-sans leading-relaxed">
+            Our altar never grows cold. Believers from 48 nations stand on the wall every Monday and Friday, establishing a perimeter of fire around families, nations, and destinies.
+          </p>
+        </div>
+
+        <div class="glass-panel p-8 rounded-3xl border border-white/10 hover:border-amber-400/40 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="text-xl font-display font-bold text-white mb-3">Uncompromising Deliverance</h3>
+          <p class="text-xs text-neutral-400 font-sans leading-relaxed">
+            Our Friday vigils are charged with prophetic authority. Foundational covenants, generational sickness, and demonic blockades are shattered under the mantle of Jesus Christ.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GLOBAL ALTAR METRICS & IMPACT -->
+  <section id="nations" class="py-24 px-6 border-t border-white/10 bg-[#08080a] relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <span class="text-4xl sm:text-6xl font-display font-extrabold text-gold-gradient block mb-2">48+</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">Participating Nations</span>
+        </div>
+        <div>
+          <span class="text-4xl sm:text-6xl font-display font-extrabold text-white block mb-2">120K+</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">Intercessory Hours</span>
+        </div>
+        <div>
+          <span class="text-4xl sm:text-6xl font-display font-extrabold text-clay-warm block mb-2">2</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">Consecrated Days (Mon & Fri)</span>
+        </div>
+        <div>
+          <span class="text-4xl sm:text-6xl font-display font-extrabold text-amber-300 block mb-2">10,000+</span>
+          <span class="text-xs font-mono uppercase tracking-widest text-neutral-400">Testimonies Cataloged</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRAYER SUBMISSION MODAL SHEET -->
+  <div id="prayer-modal" class="modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="modal-sheet glass-panel-gold w-full max-w-xl rounded-3xl p-8 sm:p-10 border border-sacred-gold/40 relative shadow-2xl">
+      
+      <!-- Close Button -->
+      <button id="btn-close-prayer-modal" class="absolute top-6 right-6 text-neutral-400 hover:text-white transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <span class="text-xs font-mono text-amber-400 uppercase tracking-widest block mb-2">Sacred Intercession Altar</span>
+      <h3 class="text-2xl font-display font-bold text-white mb-2">Submit Your Prayer Burden</h3>
+      <p class="text-xs text-neutral-400 font-sans mb-6">
+        Your prayer point will be brought before the throne room during our Monday and Friday prayer watches.
+      </p>
+
+      <form id="prayer-submission-form" class="space-y-4">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono text-neutral-300 uppercase tracking-wider mb-1.5">Your Name (or Anonymous)</label>
+            <input type="text" id="input-prayer-name" placeholder="e.g. Sister Ruth K." class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-neutral-500 focus:outline-none focus:border-sacred-gold text-xs font-sans" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-mono text-neutral-300 uppercase tracking-wider mb-1.5">City & Country</label>
+            <input type="text" id="input-prayer-location" placeholder="e.g. Manchester, UK" class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-neutral-500 focus:outline-none focus:border-sacred-gold text-xs font-sans" />
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-neutral-300 uppercase tracking-wider mb-1.5">Prayer Category</label>
+          <select id="input-prayer-category" class="w-full px-4 py-3 rounded-xl bg-black/70 border border-white/10 text-white focus:outline-none focus:border-sacred-gold text-xs font-mono">
+            <option value="BREAKTHROUGH">Financial & Career Breakthrough (Monday Altar)</option>
+            <option value="DELIVERANCE">Deliverance & Spiritual Warfare (Friday Vigil)</option>
+            <option value="HEALING">Divine Health & Bodily Restoration</option>
+            <option value="FAMILY">Family, Marriage & Children</option>
+            <option value="SALVATION">Salvation & Spiritual Revivification</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-mono text-neutral-300 uppercase tracking-wider mb-1.5">Your Burden / Specific Petition</label>
+          <textarea id="input-prayer-text" rows="4" required placeholder="Write your specific prayer points here with faith. The Potter hears the cry of the humble..." class="w-full px-4 py-3 rounded-xl bg-black/50 border border-white/10 text-white placeholder-neutral-500 focus:outline-none focus:border-sacred-gold text-xs font-sans resize-none"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sacred-gold to-amber-500 text-black font-semibold text-xs uppercase tracking-wider shadow-lg hover:brightness-110 transition-all font-mono">
+          Place Upon The Altar
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- AWWWARDS ARCHITECTURAL FOOTER -->
+  <footer class="pt-24 pb-16 px-6 border-t border-white/10 bg-[#050507] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Large Headline Banner -->
+      <div class="border-b border-white/10 pb-16 mb-16 flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-[0.25em] text-clay-warm mb-3 block">
+            The Gates Are Open Every Monday & Friday
+          </span>
+          <h2 class="font-display text-5xl sm:text-7xl font-extrabold text-white uppercase tracking-tight">
+            Come to the <br />
+            <span class="font-serif italic font-normal text-gold-gradient normal-case">Potter's House.</span>
+          </h2>
+        </div>
+
+        <div class="space-y-3 font-mono text-xs">
+          <div class="flex items-center gap-3 text-neutral-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span>MONDAYS: 06:00 & 19:00 UTC (Breakthrough Altar)</span>
+          </div>
+          <div class="flex items-center gap-3 text-neutral-300">
+            <span class="w-2 h-2 rounded-full bg-clay-warm"></span>
+            <span>FRIDAYS: 21:00 UTC (Prophetic Fire Vigil)</span>
+          </div>
+          <div class="text-neutral-500 text-[11px] mt-2">
+            Zoom Room ID: 849 2039 1102 • Passcode: POTTER
+          </div>
+        </div>
+      </div>
+
+      <!-- Links Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16 text-xs font-sans text-neutral-400">
+        
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full border border-sacred-gold/40 flex items-center justify-center bg-clay-raw/10">
+              <svg class="w-4 h-4 text-sacred-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 2C8 6 6 9 6 13a6 6 0 0 0 12 0c0-4-2-7-6-11z" />
+              </svg>
+            </div>
+            <span class="font-display font-bold text-white text-sm">PGPM Global</span>
+          </div>
+          <p class="leading-relaxed text-[11px] text-neutral-500">
+            Potter's Global Prayer Ministry is an international apostolic intercession fellowship dedicated to spiritual remolding and territorial transformation.
+          </p>
+        </div>
+
+        <div>
+          <h5 class="font-mono text-white uppercase tracking-widest mb-4">Consecration Days</h5>
+          <ul class="space-y-2 text-[11px]">
+            <li><a href="#schedule" class="hover:text-amber-300 transition-colors">Monday Early Dew (06:00 UTC)</a></li>
+            <li><a href="#schedule" class="hover:text-amber-300 transition-colors">Monday Breakthrough (19:00 UTC)</a></li>
+            <li><a href="#schedule" class="hover:text-clay-soft transition-colors">Friday Prophetic Vigil (21:00 UTC)</a></li>
+            <li><a href="#countdown-section" class="hover:text-sacred-gold transition-colors">Real-time Countdown</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-mono text-white uppercase tracking-widest mb-4">Live Broadcasting</h5>
+          <ul class="space-y-2 text-[11px]">
+            <li><a href="https://youtube.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">YouTube Live Sanctuary</a></li>
+            <li><a href="https://zoom.us" target="_blank" rel="noopener" class="hover:text-white transition-colors">Zoom Upper Room</a></li>
+            <li><a href="https://mixlr.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">24/7 Audio Stream (Mixlr)</a></li>
+            <li><a href="https://whatsapp.com" target="_blank" rel="noopener" class="hover:text-white transition-colors">Global WhatsApp Intercessors</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-mono text-white uppercase tracking-widest mb-4">Prayer Line Desk</h5>
+          <p class="text-[11px] text-neutral-400 mb-3">
+            Urgent hospital crises or bereavement intercession desk:
+          </p>
+          <div class="font-mono text-amber-300 text-xs">
+            +1 (800) 772-9371 (PRAY-71)<br/>
+            altar@pottersglobalministry.org
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Credits & Awwwards Signature -->
+      <div class="pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-neutral-500 gap-4">
+        <div>
+          &copy; 2026 Potter's Global Prayer Ministry. Formed in Christ. Built for eternity.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-amber-400/80">Crafted with 60 Years of Engineering Discipline</span>
+          <span>•</span>
+          <span class="text-neutral-400">Jeremiah 18:1-6</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Application Logic Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
